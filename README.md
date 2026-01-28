@@ -4,7 +4,7 @@
 
 # It is a modified version of AutoAgent for benchmarking purpose only.
 
-Other than the original setup for GAIA benchmark, it has the following modifications:
+Other than the original setup for GAIA benchmark, you should do the following extra step:
 - You need to set the `SERPAPI_API_KEY` in the `.env` file to enable web search tool.
 
 We do the following changes in the codebase:

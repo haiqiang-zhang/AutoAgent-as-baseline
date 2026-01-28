@@ -1,5 +1,20 @@
 <a name="readme-top"></a>
 
+
+
+# It is a modified version of AutoAgent for benchmarking purpose only.
+
+Other than the original setup for GAIA benchmark, it has the following modifications:
+- You need to set the `SERPAPI_API_KEY` in the `.env` file to enable web search tool.
+
+We do the following changes in the codebase:
+- The default LLM is set to `gpt-4o-mini`.
+- The default docker image is set to `tjbtech1/gaia-bookworm:amd64`.
+- replace the `web_search` tool with `serpapi_web_search` tool
+- add usage statistics to count the LLM API calls and tokens used during the benchmark.
+- fix several bugs
+
+
 <div align="center">
   <img src="./assets/AutoAgent_logo.svg" alt="Logo" width="200">
   <h1 align="center">AutoAgent: Fully-Automated & Zero-Code</br> LLM Agent Framework </h1>

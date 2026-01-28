@@ -10,8 +10,10 @@ Other than the original setup for GAIA benchmark, you should do the following ex
 We do the following changes in the codebase:
 - The default LLM is set to `gpt-4o-mini`.
 - The default docker image is set to `tjbtech1/gaia-bookworm:amd64`.
-- replace the `web_search` tool with `serpapi_web_search` tool
+- replace the `web_search` tool with `serpapi_web_search` tool to overcome the human verification issue.
+- add repeated tool invocation limitation to avoid infinite loops.
 - add usage statistics to count the LLM API calls and tokens used during the benchmark.
+
 - fix several bugs
 
 

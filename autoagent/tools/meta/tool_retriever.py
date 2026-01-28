@@ -32,7 +32,3 @@ def get_api_plugin_tools_doc(query_text: str) -> str:
         return "Failed to rerank the tool documentation. Error: " + str(e)
 
     return reranked_result
-    
-if __name__ == "__main__":
-    os.environ["GEMINI_API_KEY"] = "AIzaSyDblGdaCwhWq0RpXe7aCPFQr0MBg__GN2E"
-    print(get_api_plugin_tools_doc("Youtube"))
